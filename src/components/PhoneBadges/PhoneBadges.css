@@ -1,0 +1,62 @@
+.Badge {
+  border-radius: 15px 50px;
+  background: rgb(40, 8, 156);
+  padding: 1px; 
+  height: 16px; 
+  color: white;
+  margin-right: 1px;
+  padding-right: 7px;
+  padding-left: 7px;
+}
+
+.Android {
+  background: rgb(164, 198, 57);
+}
+
+.Blackberry {
+  background: rgb(0,0,0);
+}
+
+.Apple {
+  background: rgb(142,142,147);
+}
+
+.Microsoft {
+  background: rgb(38,159,217);
+}
+
+.Gsm {
+  background: rgb(122, 38, 217);
+}
+
+.Umts {
+  background: rgb(99, 25, 41);
+}
+
+.Lte {
+  background: rgb(5, 65, 42);
+}
+
+.Evdo {
+  background: rgb(46, 2, 63);
+}
+
+.Cdma {
+  background: rgb(63, 70, 82);
+}
+
+.Wifi {
+  background: rgb(0,0,0);
+}
+
+.Year {
+  background: rgb(1, 114, 35);
+}
+
+.Sim {
+  background: rgb(67, 2, 83);
+}
+
+.Nfc {
+  background: rgb(37, 116, 168);
+}

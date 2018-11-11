@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import ReactTable from 'react-table';
-import 'react-table/react-table.css'
+import 'react-table/react-table.css';
+import PhoneBadges from '../PhoneBadges/PhoneBadges';
+import PhonePanel from './PhonePanel';
 
 class PhoneDetails extends Component {
 
@@ -44,38 +46,28 @@ class PhoneDetails extends Component {
 
       const columns = [{
         Header: 'Device Name',
-        accessor: 'DeviceName'
+        accessor: 'DeviceName',
+        width: 250
       }, {
         Header: 'Technology',
-        accessor: 'technology'
-      }, {
-        Header: 'SIM',
-        accessor: 'sim'
-      }, {
-        Header: 'WiFi',
-        accessor: 'wlan'
-      }, {
-        Header: 'Bluetooth',
-        accessor: 'bluetooth'
-      }, {
-        Header: 'Announced',
-        accessor: 'announced'
-      }, {
-        Header: 'Status',
-        accessor: 'status'
-      }, {
-        Header: 'OS',
-        accessor: 'os'
+        accessor: 'technology',
+        Cell: row => (
+          <div><PhoneBadges phoneDetails={row.original}/></div>
+        )
       }]
 
       return (
         <div>
-        <p />
         <ReactTable
           data={this.props.phoneDetails}
           columns={columns}
+          defaultPageSize={10}
+          SubComponent={row => {
+            return (
+              <PhonePanel phoneDetails={row.original}/>
+            );
+          }}
         />
-        <p />
         </div>
       );
     }
