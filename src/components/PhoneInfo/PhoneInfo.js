@@ -17,30 +17,6 @@ class PhoneInfo extends Component {
     this.handleSubmit = this.handleSubmit.bind(this);
   }
 
-  componentWillMount(){
-    console.log(this.className + ' - componentWillMount');
-  }
-  
-  componentDidMount(){
-    console.log(this.className + ' - componentDidMount');
-  }
-  
-  componentWillReceiveProps(){
-    console.log(this.className + ' - componentWillReceiveProps');
-  }
-  
-  componentWillUpdate(){
-    console.log(this.className + ' - componentWillUpdate');
-  }
-  
-  componentDidUpdate(){
-    console.log(this.className + ' - componentDidUpdate');
-  }
-  
-  componentWillUnmount(){
-    console.log(this.className + ' - componentWillUnmount');
-  }
-
   handleChangeName(event) {
     this.setState({phoneName: event.target.value});
   }
@@ -60,8 +36,7 @@ class PhoneInfo extends Component {
   }
 
   render() {
-    console.log(this.className + ' - render');
-;
+
     let phoneDetails = this.state.loading ? <p>Querying...</p> : <PhoneDetails phoneDetails={this.state.phoneInfos}/>;
 
     return (

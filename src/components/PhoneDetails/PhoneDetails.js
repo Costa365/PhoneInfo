@@ -6,35 +6,7 @@ import PhonePanel from './PhonePanel';
 
 class PhoneDetails extends Component {
 
-  className = 'PhoneDetails';
-  
-  componentWillMount(){
-    console.log(this.className + ' - componentWillMount');
-  }
-  
-  componentDidMount(){
-    console.log(this.className + ' - componentDidMount');
-  }
-  
-  componentWillReceiveProps(){
-    console.log(this.className + ' - componentWillReceiveProps');
-  }
-  
-  componentWillUpdate(){
-    console.log(this.className + ' - componentWillUpdate');
-  }
-  
-  componentDidUpdate(){
-    console.log(this.className + ' - componentDidUpdate');
-  }
-  
-  componentWillUnmount(){
-    console.log(this.className + ' - componentWillUnmount');
-  }
-
-
   render() {
-    console.log(this.className + ' - render');
 
     if(this.props.phoneDetails.length === undefined){
       return <p>Unknown</p>   
@@ -51,6 +23,7 @@ class PhoneDetails extends Component {
       }, {
         Header: 'Technology',
         accessor: 'technology',
+        width: 750,
         Cell: row => (
           <div><PhoneBadges phoneDetails={row.original}/></div>
         )
