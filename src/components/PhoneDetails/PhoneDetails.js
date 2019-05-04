@@ -31,6 +31,7 @@ class PhoneDetails extends Component {
 
       return (
         <div>
+        <p></p>
         <ReactTable
           data={this.props.phoneDetails}
           columns={columns}
@@ -41,6 +42,7 @@ class PhoneDetails extends Component {
             );
           }}
         />
+        <p></p>
         </div>
       );
     }

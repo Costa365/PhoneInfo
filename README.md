@@ -16,9 +16,9 @@ $ npm install -g create-react-app
 $ create-react-app PhoneInfo
 $ npm install react-table
 ```
-- Create an API key for fonoapi and store it in ~\\.env (outside src)
+- Create an API key for fonoapi and store it in .env (outside src)
 ```console
-REACT_APP_FONOAPI_KEY=xxxxxxxxxxxxx
+REACT_APP_FONO_API_KEY=xxxxxxxxxxxxx
 ```
 - Start the application and modify:
 ```console

@@ -3,7 +3,7 @@
 }
 
 .App-header {
-  background-color: #222;
+  background-color: rgb(0, 75, 120);
   height: 50px;
   padding: 2px;
   color: white;
@@ -19,7 +19,7 @@
 }
 
 .App-footer {
-  background-color: #E9184D;
+  background-color: rgb(0, 75, 120);
   height: 17px;
   padding: 2px;
   color: white;
