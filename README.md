@@ -2,7 +2,7 @@
 
 Simple React.js application that shows mobile phone information using [https://fonoapi.freshpixl.com](https://fonoapi.freshpixl.com).
 
-Hosted here: http://fonoapi.co.nf/
+Hosted here: http://costa365.rf.gd/phoneinfo/
 
 ## How this application was made
 
