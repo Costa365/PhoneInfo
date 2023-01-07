@@ -1,5 +1,7 @@
 # Phone Info
 
+***\*Fonoapi is down, so this no longer works***
+
 Simple React.js application that shows mobile phone information using [https://fonoapi.freshpixl.com](https://fonoapi.freshpixl.com).
 
 Hosted here: http://costa365.rf.gd/phoneinfo/
